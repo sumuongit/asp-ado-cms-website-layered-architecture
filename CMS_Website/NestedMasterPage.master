@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="CMS_Website.NestedMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div class="container">     
+            
+            <div class="row">    
+                 <nav id="nav_admin" class="navbar navbar-default navbar-fixed-top" style="margin-top:110px;background-color:#c0c0c0 !important;z-index:1">
+                      <div class="container">
+
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcpadmin" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button> 
+                                <a class="navbar-brand" href="#">ADMIN PANEL</a>                             
+                            </div>
+
+                            <div id="navbarcpadmin" class="navbar-collapse collapse">
+
+                               <ul class="nav navbar-nav">
+                                   <li id="cp_story"><a  href="/Control_Panel/story.aspx">Story</a></li>  
+                                    <li id="cp_report"><a  href="/Control_Panel/report.aspx">Report</a></li>  
+                                    <li id="cp_publication"><a  href="/Control_Panel/publication.aspx">Publication</a></li>  
+                                    <li id="cp_news"><a  href="/Control_Panel/news.aspx">News</a></li>  
+                                    <li id="cp_event"><a  href="/Control_Panel/event.aspx">Event</a></li>  
+                                    <li id="cp_achievement"><a  href="/Control_Panel/achievement.aspx">Achievement</a></li>  
+                                    <li id="cp_photo_gallery"><a  href="/Control_Panel/photo_gallery.aspx">Photo Gallery</a></li>  
+                                    <li id="cp_banner"><a  href="/Control_Panel/banner.aspx">Banner</a></li>  
+                                  
+                                </ul>                             
+
+                             </div>
+                      </div>
+                 </nav>           
+                
+                 <nav id="nav_user" class=" navbar navbar-default navbar-fixed-top" style="margin-top:110px;background-color:#c0c0c0 !important;z-index:1">
+                      <div class="container">
+
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcpuser" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button> 
+                                <a class="navbar-brand" href="#">USER PANEL</a>                             
+                            </div>
+
+                            <div id="navbarcpuser" class="navbar-collapse collapse">
+
+                               <ul class="nav navbar-nav">
+                                   <li id="cp_story_user"><a  href="/Control_Panel/story.aspx">Story</a></li> 
+                                  
+                                </ul>                             
+
+                             </div>
+                      </div>
+                 </nav>            
+            </div>
+            
+           
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+           
+    </div>	   
+</asp:Content>

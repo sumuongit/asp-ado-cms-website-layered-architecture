@@ -1,0 +1,259 @@
+﻿#myImg8 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg8:hover {opacity: 0.7;}
+
+#myImg9 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg9:hover {opacity: 0.7;}
+
+#myImg10 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg10:hover {opacity: 0.7;}
+
+#myImg11 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg11:hover {opacity: 0.7;}
+
+#myImg12 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg12:hover {opacity: 0.7;}
+
+#myImg13 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg13:hover {opacity: 0.7;}
+
+#myImg14 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg14:hover {opacity: 0.7;}
+
+#myImg15 {
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg15:hover {opacity: 0.7;}
+
+
+
+#caption9 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption9 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption10 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption10 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption11 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption11 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption12 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption12 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption13 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption13 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption14 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption14 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption15 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption15 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption16 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption16 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@media only screen and (max-width: 700px) {
+     #img09{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img10{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img11{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img12{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img13{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img14{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img15{
+     height: auto;
+     max-width: 100%;
+     }
+
+     #img16{
+     height: auto;
+     max-width: 100%;
+     }
+}

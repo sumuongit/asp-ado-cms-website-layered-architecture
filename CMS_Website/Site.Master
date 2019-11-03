@@ -1,0 +1,789 @@
+﻿<%@ Master  Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CMS_Website.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+  <title>CMS Website</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="CSS/StyleSheet_dropdown.css" rel="stylesheet" />
+  <link href="CSS/StyleSheet_dropdownmenu.css" rel="stylesheet" />
+  <link href="CSS/Photo_popup_next.css" rel="stylesheet" />
+  <link href="CSS/Pagination.css" rel="stylesheet" />
+  <link href="CSS/lightbox.css" rel="stylesheet" />
+  <link href="CSS/lightbox.min.css" rel="stylesheet" />
+  <script src="Scripts/lightbox-plus-jquery.js"></script>
+  <script src="Scripts/lightbox-plus-jquery.min.js"></script>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- For Footer -->
+  <link href="CSS/footer_style.css" rel="stylesheet" />
+  <link href="CSS/photo_gallery.css" rel="stylesheet" />
+  <link href="CSS/photo_popup.css" rel="stylesheet" />
+
+  <style>
+      
+    .navbar-default .navbar-brand {
+    color: white;
+    }
+
+    .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+        color: green;
+        background-color: transparent;
+    }
+
+    .navbar-default {
+        background-color: #043927 !important;
+    }
+    
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { 
+      color: #e5dbdb; 
+    }
+
+
+    .dropdown-menu{
+        background-color: #ffffff !important;
+    }
+
+    .dropdown-menu>li>a {
+        display: block;
+        padding: 12px 16px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+    }
+
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+        color: #262626;
+        text-decoration: none;
+        background-color: #DFE2E4;
+    }
+
+    /*Slider Image*/
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        top: calc(50% - 150px);
+        font-size: 40px;
+        left: 15%;
+        z-index: 10;
+        padding-bottom: 0px;
+        color: #fff;
+        text-align: center;
+    }
+
+     /*Slider Image -> p*/
+    .carousel-caption p {
+         /*25px*/
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #fff;
+        padding: 10px;
+        background-color:transparent;
+    }
+
+     /*Slider Image -> h2*/
+    .carousel-caption h2 {
+        font-size: 5.0vh; /*50px*/
+        color: #fff;
+    }
+
+    /*News show more font size*/
+    .morelink{
+        font-size:70% !important;
+    }
+
+    /*FOOTER SECTION STARTS*/
+    .footer-fixed-bottom-wrap {
+	width: 100%;
+	height: auto;
+	/*position: fixed;*/
+	z-index: 1000 !important;
+	bottom: 0;
+    }
+    
+    .footer-fixed-bottom_down {	    
+	    background: #073;
+    }
+
+    .footer_link{
+        color:blue;
+    } 
+       
+    a.footer_link:hover{
+        color:deepskyblue !important;
+        text-decoration:none;
+    } 
+
+     /*Contact us -> textbox -> responsive*/
+    .responsive-textbox { 
+        width: 100%; 
+        /*border-radius: 4px;*/
+    }
+      
+      @media only screen and (max-width: 700px) {
+          #login_div{
+              width: 80%;
+          }
+
+          #login_container{
+               width: 100%;
+          }
+      }
+
+
+      @media only screen and (min-width: 900px) {
+          #login_div{
+              width: 25%;
+          }
+
+      }
+
+      
+
+      .hide{
+           display:none;  
+       }
+      .top_break{
+          margin-top: 140px;
+      }
+
+      .top_break_control_panel{
+          margin-top: 180px;
+      }
+
+    .navbar-default .navbar-nav>.active_cp>a, .navbar-default .navbar-nav>.active_cp>a:focus, .navbar-default .navbar-nav>.active_cp>a:hover {
+    color: white;
+    background-color: #508;
+    }
+
+    .gtable>tbody>tr>td, .gtable>tbody>tr>th, .gtable>tfoot>tr>td, .gtable>tfoot>tr>th, .gtable>thead>tr>td, .gtable>thead>tr>th {
+    border-top: 1px solid #000 !important;
+    border-bottom: 1px solid #000;
+    }
+
+    
+
+    /*/ Extra small devices (phones, 600px and down) /*/
+    @media only screen and (max-width: 600px) {
+        #home_video{
+            width:380px;
+        }
+         #logobar{
+            margin-left: 0px; 
+        }
+        #partner_logo{
+            margin-right: 0px;
+        }
+        #gob_logo{
+            margin-left:10px;
+        }
+         #span_bar{
+            font-size: 0vw;
+        }
+        .carousel-caption p {
+          font-size: 2vh;
+        }
+
+        #cra_image{
+            width: 100%;
+            height: auto;
+        }
+
+         #barchartPBCRGDisbursement{
+           width:300px;
+           height:350px;
+         }
+
+         #barchartPBCRGFYDisbursement
+         {
+           width:300px;
+           height:350px;
+         }
+         #piechartCRFBenificiaries
+         {
+           width:370px;
+           height:350px;
+        }
+         #piechartCRFDisbursed
+         {
+           width:370px;
+           height:350px;
+         }
+         #piechartSchemeType{
+            width:370px;
+           height:350px;
+           margin-left:0px;
+        }
+         #barchartCRFLivelihoodOptions{
+              width:350px;
+              height:500px;
+              margin-left: 0px;
+         }
+        
+    } 
+
+    /*/ Small devices (portrait tablets and large phones, 600px and up) /*/
+    @media only screen and (min-width: 600px) {
+        #home_video{
+            width:380px;
+        }
+        #logobar{
+            margin-left: 0px; 
+        }
+        #partner_logo{
+            margin-right: 0px;
+        }
+        #span_bar{
+            font-size: 0vw;
+        }
+         #gob_logo{
+            margin-left:10px;
+        }
+        .carousel-caption p {
+          font-size: 2vh;
+        }
+
+        #cra_image{
+            width: 100%;
+            height: auto;
+        }
+        #barchartPBCRGDisbursement{
+           width:300px;
+           height:350px;
+         }
+        #barchartPBCRGFYDisbursement
+         {
+           width:300px;
+           height:350px;
+         }
+        #piechartCRFBenificiaries
+         {
+           width:370px;
+           height:350px;
+        }
+        #piechartCRFDisbursed
+         {
+           width:370px;
+           height:350px;
+         }
+        #piechartSchemeType{
+            width:370px;
+           height:350px;
+           margin-left:0px;
+        }
+         #barchartCRFLivelihoodOptions{
+              width:350px;
+              height:500px;
+              margin-left: 0px;
+         }
+       
+    } 
+
+    /*/ Medium devices (landscape tablets, 768px and up) /*/
+    @media only screen and (min-width: 768px) {
+        #home_video{
+            width:460px;
+        }
+         #logobar{
+            margin-left: 0px; 
+        }
+        #partner_logo{
+            margin-right: 0px;
+        }
+         #span_bar{
+            font-size: 0vw;
+        }
+        #gob_logo{
+            margin-left:10px;
+        }
+        .carousel-caption p {
+          font-size: 2vh;
+        }
+
+        #cra_image{
+            width: 100%;
+            height: auto;
+        }
+        #barchartPBCRGDisbursement{
+           width:500px;
+           height:400px;
+         }
+        #barchartPBCRGFYDisbursement
+         {
+           width:500px;
+           height:400px;
+         }
+        #piechartCRFBenificiaries
+         {
+           width:800px;
+           height:500px;
+        }
+        #piechartCRFDisbursed
+         {
+           width:800px;
+           height:500px;
+         }
+         #piechartSchemeType{
+           width:700px;
+           height:500px;
+           margin-left:25%;
+        }
+          #barchartCRFLivelihoodOptions{
+              width:1000px;
+              height:1000px;
+              /*margin-left: 25%;*/
+         }
+         
+    }
+     
+    /*/ Large devices (laptops/desktops, 992px and up) /*/
+    @media only screen and (min-width: 992px) {
+        #home_video{
+            width:460px;
+        }
+        #logobar{
+            margin-left: -50px; 
+        }
+         #partner_logo{
+            margin-right: -40px;
+        }
+
+        #span_bar{
+            font-size:1.2vw;
+        }
+        #gob_logo{
+            margin-left: 20px;
+        }
+        .carousel-caption p {
+          font-size: 3vh;
+        }
+
+        #cra_image{
+            width: 50%;
+            height: auto;
+        }
+         #barchartPBCRGDisbursement{
+           width:500px;
+           height:400px;
+         }
+         #barchartPBCRGFYDisbursement
+         {
+           width:500px;
+           height:400px;
+         }
+         #piechartCRFBenificiaries
+         {
+           width:800px;
+           height:500px;
+        }
+         #piechartCRFDisbursed
+         {
+           width:800px;
+           height:500px;
+         }
+         #piechartSchemeType{
+           width:700px;
+           height:500px;
+           margin-left:25%;
+        }
+         #barchartCRFLivelihoodOptions{
+              width:1000px;
+              height:1000px;
+              /*margin-left: 25%;*/
+         }
+       
+    } 
+
+    /*/ Extra large devices (large laptops and desktops, 1200px and up) /*/
+    @media only screen and (min-width: 1281px) {
+        #home_video{
+            width:460px;
+        }
+        #logobar{
+            margin-left: -80px; 
+        }
+        #gob_logo{
+            margin-left:0px;
+        }
+        #partner_logo{
+            margin-right: -80px;
+        }
+        #cra_image{
+            width: 50%;
+            height: auto;
+        }
+
+        #span_bar{
+            font-size:1.2vw;
+        }
+
+        .carousel-caption p {
+          font-size: 3vh;
+        }
+
+         #barchartPBCRGDisbursement{
+           width:500px;
+           height:400px;
+         }
+         #barchartPBCRGFYDisbursement
+         {
+           width:500px;
+           height:400px;
+         }
+         #piechartCRFBenificiaries
+         {
+           width:800px;
+           height:500px;
+         }
+         #piechartCRFDisbursed
+         {
+           width:800px;
+           height:500px;
+         }
+          #piechartSchemeType{
+           width:700px;
+           height:500px;
+           margin-left:25%;
+        }
+           #barchartCRFLivelihoodOptions{
+              width:1000px;
+              height:1000px;
+              /*margin-left: 25%;*/
+         }
+       
+        
+    }
+
+     
+   </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+
+<body >
+    <form id="form1" runat="server">
+
+        <div class="container" style="position: relative; width: 100%;">
+      
+            <!-- Here is first row which contains Logo, Login/Sign up, Menu, Sliders of photos -->
+            <!-- Start first row -->
+            <div class="row">    
+                 <nav class="navbar navbar-default navbar-fixed-top" style="background-color:darkgreen !important;z-index:1;margin-bottom:50px;height:60px;">
+                      <div class="container">
+
+                            <div  id="logobar" style="padding-top:5px;">
+                              
+                                <div class="row">
+                                    <div class="col" id="gob_logo">
+                                                                       
+                                    </div>
+                                    <div class="col" id="partner_logo" style="float:right; margin-top:-50px">
+                                    </div>
+                                </div>
+                              
+                            </div>
+
+                      </div>
+                 </nav>                 
+            </div>
+
+
+            <div class="row">
+
+                 <!--Navbar contains Logo and Login, Menu, Sign Up -->
+                 <!-- Start Navbar --> 
+               
+                 <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:60px; position:fixed !important; transition: top 0.3s;" id="navbar_top" >
+                      <div class="container">
+
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                            </div>
+
+                            <div id="navbar" class="navbar-collapse collapse">
+
+                               <ul class="nav navbar-nav ">
+                                   <li id="home_lnk"><a  href="/home.aspx">Home</a></li>  
+                                   
+                                   <li class="dropdown" id="what_we_do_dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Success Stories/Photo Gallery/Achievement<span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                            <li><a href="/story_board.aspx">Success Stories</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="/photo_gallery.aspx">Photo Gallery</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="/achievement.aspx">Achievement</a></li>
+                                                              
+                                      </ul>
+                                    </li>
+
+                                   <li class="dropdown" id="how_we_work_dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News/Events/Reports/Publications<span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                         
+                                          <li><a href="/latest_news_events.aspx">Latest News & Events</a></li>
+                                          <li role="separator" class="divider"></li>
+                                          <li><a href="/reports_and_publications.aspx">Reports & Publications</a></li>   
+                                      </ul>
+                                   </li>
+
+                                 
+                                  <li id="contact_us_lnk"><a href="/contact.aspx">Contact & Feedback</a></li>      
+                                   
+                                  <li id="dashboard_status" class="hide"><a href="/Control_Panel/story.aspx">Control Panel</a></li>        
+                          </ul>
+
+                              <ul class="nav navbar-nav navbar-right">  
+                                   
+                                    <li id="login"><a href="/login.aspx"> Login</a></li>     
+                                    <li id="logout" class="hide"><a href="/logout.aspx"> Logout</a></li>       
+                              </ul>
+
+                             </div><!--/.nav-collapse -->
+                      </div>
+                 </nav> 
+                        
+            </div>
+
+         
+            
+            <!-- End first row -->
+
+            <!-- Contains of Other Pages -->
+            <!-- Start div-->
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- End div-->       
+
+        <!-- Here is contains of footer -->
+        <!-- Start row -->
+    </div>	   
+           
+            <!-- Footer Start -->
+            <br />
+            <br />
+            <br />
+            <br />
+
+        <footer class="footer-fixed-bottom-wrap">
+           
+
+         <div class="footer-fixed-bottom_down" id="aside-welcome-main">
+
+            <div class="container">
+            <div class="media-container-row content mbr-white" style="margin-top: 50px;">
+            <div class="col-12 col-md-2 mbr-fonts-style display-7">
+
+            <a class="btn btn-danger btn-lg m-0 display-4" href="/home.aspx" style="color: white;border-radius: 50px;">Home</a>
+            <br>
+            <br>
+            <p class="mbr-text">
+            <strong style="color:white">OBJECTIVE</strong>
+            <br>
+            <br>
+            <i style="color: lightgray;font-size: 12px;">
+            "CMS Website Design and Development"
+            </i>
+            </p>
+
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+            <p class="mbr-text">
+            <strong style="color:white">Who We Are</strong>
+            <br>
+            <br><a class="text-primary footer_link" href="#">Who We Are</a>
+            <br><a class="text-primary footer_link" href="#">Who We Are</a>
+            <br><a class="text-primary footer_link" href="#">Who We Are</a>            
+
+            <br>
+            <br>
+
+            <strong style="color:white">What We Do</strong>
+            <br>
+            <br><a class="text-primary footer_link" href="#">What We Do</a>t
+            <br><a class="text-primary footer_link" href="#">What We Do</a>
+            <br><a class="text-primary footer_link" href="#">What We Do</a> 
+            </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+            <p class="mbr-text">
+            <strong style="color:white">How We Work</strong>
+            <br>
+            <br><a class="text-primary footer_link" href="#">How We Work</a>
+            <br><a class="text-primary footer_link" href="#">How We Work</a>
+            <br><a class="text-primary footer_link" href="#">How We Work</a>
+           
+            
+            <br>
+            <br>
+
+            <strong style="color:white">Achievement</strong>
+            <br>
+            <br><a class="text-primary footer_link" href="/story_board.aspx">Success Stories</a>
+            
+            <br>
+            <a class="text-primary footer_link" href="/photo_gallery.aspx">Photo Gallery</a>
+            
+            <br><a class="text-primary footer_link" href="/achievement.aspx">Achievement</a>
+            <br>
+            <a class="text-primary footer_link" href="/latest_news_events.aspx">Latest News &amp; Events</a>
+            <br>
+            <a class="text-primary footer_link" href="/reports_and_publications.aspx">Reports &amp; Publications</a> 
+            </p>
+            </div>
+            <div class="col-12 col-md-4">
+           
+            <iframe src="https://maps.google.com/maps?q=IDB%20Bhaban%20Dhaka&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+           
+            <br> 
+            <br>
+            <a class="btn btn-primary btn-lg m-0 display-4" href="/contact.aspx" style="
+            border-radius: 50px;">Contact Us</a>
+            </div>
+            </div>
+
+            <div class="footer-lower">
+            <div class="media-container-row">
+           <%-- <div class="col-sm-12">
+            <hr>
+            </div>--%>
+            </div>
+            </div>
+            <br>
+             <div class="footer-lower">
+            <div class="media-container-row">
+            <div class="col-sm-12">
+            <hr /></div>
+            </div>
+            <div class="media-container-row mbr-white">
+            <div class="col-sm-8 copyright">
+            <p class="mbr-text mbr-fonts-style display-7" style="color: white;">
+            © Copyright 2019 My Project - All Rights Reserved. Designed by: Me
+            </p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+         </div>
+          
+          
+         </footer>
+
+         
+    </form>
+
+
+
+  <!-- javascript -->
+  <%--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>--%>
+
+  <script type="text/javascript">       
+
+        ///For Stop Map Scrolling **** Start ****
+        $('.maps').click(function () {
+            $('.maps iframe').css("pointer-events", "auto");
+        });
+
+        $(".maps").mouseleave(function () {
+            $('.maps iframe').css("pointer-events", "none");
+        });
+        /// ******End******
+
+        $(document).ready(function () {
+
+            //document.getElementById("dashboard_status").disabled = true;
+            $(".comment").shorten();
+
+            $(".comment-small").shorten({ showChars: 20 });
+
+            
+        });
+         
+          var dashboard_status = '<%= Session["dashboard_status"] %>';
+          var str = "true";
+         
+          var check = dashboard_status.localeCompare(str);
+            if (check==0)
+            {
+                $("#dashboard_status").removeClass("hide");
+                $("#logout").removeClass("hide");
+                $("#login").addClass("hide");
+                //document.getElementById("dashboard_status").classList.add('active');
+            }
+            else {
+                $("#dashboard_status").addClass("hide");
+                $("#logout").addClass("hide");
+                $("#login").removeClass("hide");
+            }
+
+          var user_status = '<%= Session["user_role"] %>';
+          var str_check = "user";
+         
+          var _check = user_status.localeCompare(str_check);
+            if (_check==0)
+            {
+                $("#nav_admin").addClass("hide");
+              
+            }
+        
+          var _user_status = '<%= Session["user_role"] %>';
+          var _str_check = "admin";
+         
+          var _check_staus = _user_status.localeCompare(_str_check);
+          if (_check_staus == 0)
+            {
+              $("#nav_user").addClass("hide");
+           
+            }
+           
+        document.getElementById("contact_Btn").onclick = function () {
+            location.href = "contact.aspx";
+        };
+
+
+       
+        $(function () {
+            $(window).scroll(function () {
+
+                // set distance user needs to scroll before we start fadeIn
+                if ($(this).scrollTop() > 100) {
+                    $('.navbar_top').fadeOut();
+                } else {
+                    
+                    $('.navbar_top').fadeIn();
+                }
+            });
+        });
+
+        
+  </script>
+
+</body>
+</html>
