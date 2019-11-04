@@ -27,7 +27,7 @@ To clone and run this repository you will need [Git](https://git-scm.com/) insta
 # Clone this repository
 $ git clone https://github.com/sumuongit/asp-ado-cms-website-layered-architecture.git
 # Go into the repository
-# cd asp-mvc-razor-grouped-data
+# cd asp-ado-cms-website-layered-architecture
 ```
 
 ## Contributing
