@@ -1,0 +1,37 @@
+# Exclude the following files or folders from language statistics
+CMS_Website/Content/* linguist-vendored
+CMS_Website/CSS/* linguist-vendored
+CMS_Website/Scripts/* linguist-vendored
+
+# Include the following files or folders for language renaming
+CMS_Website/Control_Panel/* linguist-language=CSHARP
+BOL/* linguist-language=CSHARP
+DAL/* linguist-language=CSHARP
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.fsproj merge=union
+*.dbproj merge=union
+
+# Image files are treated as binary by default
+*.jpg   binary
+*.png   binary
+*.gif   binary
+
+# Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain
