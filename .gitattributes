@@ -8,6 +8,9 @@ CMS_Website/Control_Panel/* linguist-language=CSHARP
 BOL/* linguist-language=CSHARP
 DAL/* linguist-language=CSHARP
 
+# Include the following files or folders for language detection
+*.sql linguist-detectable=true
+
 # Auto detect text files and perform LF normalization
 * text=auto
 
