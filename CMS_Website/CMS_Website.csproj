@@ -93,6 +93,10 @@
     <Content Include="CSS\StyleSheet_dropdownmenu.css" />
     <Content Include="CSS\StyleSheet_dropdown.css" />
     <Content Include="Database\CMS.Website.Database.sql" />
+    <Content Include="images\contact.aspx.png" />
+    <Content Include="images\control_panel_story.aspx.png" />
+    <Content Include="images\home.aspx.png" />
+    <Content Include="images\photo_gallery.aspx.png" />
     <Content Include="Scripts\JavaScript_event_home.js" />
     <Content Include="Scripts\lightbox-plus-jquery.js" />
     <Content Include="Scripts\lightbox-plus-jquery.min.js" />
@@ -418,7 +422,6 @@
     <Folder Include="Achievement_Photos\" />
     <Folder Include="Banner_Photos\" />
     <Folder Include="Event_Photos\" />
-    <Folder Include="images\" />
     <Folder Include="Master\" />
     <Folder Include="Photo_gallery\" />
     <Folder Include="Photo_Slider\" />
