@@ -13,16 +13,16 @@ A sample website for content management (Content Management System) using ASP.NE
 Some snapshots of the CMS website are given below:
 
 **Home:**
-![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/home.aspx.png)
+![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/home.png)
 
 **Photo Gallery:**
-![Photo Gallery](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/photo_gallery.aspx.png)
+![Photo Gallery](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/gallery.png)
 
 **Contact Us:**
-![Contact Us Form](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/contact.aspx.png)
+![Contact Us Form](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/contact.png)
 
 **Admin Control Panel:**
-![Admin Control Panel](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/control_panel_story.aspx.png)
+![Admin Control Panel](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/admin.png)
 
 ## Features
 * Home Page Banner Slider (database driven)
