@@ -167,5 +167,8 @@
             <!-- End container  -->  
        </div>
        
+     <script type="text/javascript">
+        document.getElementById("home_lnk").classList.add('active');
+     </script>
              
 </asp:Content>
