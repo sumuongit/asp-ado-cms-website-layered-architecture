@@ -1,5 +1,6 @@
 ## Table of Contents
 * [General Info](#general-info)
+* [Features](#features)
 * [Database Scripts](#database-scripts)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -8,6 +9,14 @@
 
 ## General Info
 A sample website for content management (Content Management System) using ASP.NET, ADO.NET and SQL Server 2012; Layered architecture pattern has been followed in this application
+
+## Features
+* Admin Control Panel
+* Photo Gallery (database driven)
+* Home Page Banner Slider (database driven)
+* Contact Us Form (Sending Mail)  
+
+and much more
 
 ## Database Scripts
 [Database Scripts](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/Database)
