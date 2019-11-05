@@ -92,6 +92,7 @@
     <Content Include="CSS\Photo_popup_next.css" />
     <Content Include="CSS\StyleSheet_dropdownmenu.css" />
     <Content Include="CSS\StyleSheet_dropdown.css" />
+    <Content Include="Database\CMS.Website.Database.sql" />
     <Content Include="Scripts\JavaScript_event_home.js" />
     <Content Include="Scripts\lightbox-plus-jquery.js" />
     <Content Include="Scripts\lightbox-plus-jquery.min.js" />
@@ -109,6 +110,7 @@
     <Content Include="forget_password.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="NestedMasterPage.master" />
+    <Content Include="Database\CMS.Website.Database.bak" />
     <None Include="Properties\PublishProfiles\UNDP_LoGIC_WS_Profile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\JavaScript_for_notice_board.js" />
