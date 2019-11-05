@@ -12,17 +12,17 @@ A sample website for content management (Content Management System) using ASP.NE
 
 Some snapshots of the CMS website are given below:
 
-**Home**
-![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/home.aspx.png)
+**Home:**
+![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/home.aspx.png)
 
-**Photo Gallery**
-![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/photo_gallery.aspx.png)
+**Photo Gallery:**
+![Photo Gallery](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/photo_gallery.aspx.png)
 
-**Contact Us**
-![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/contact.aspx.png)
+**Contact Us:**
+![Contact Us Form](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/contact.aspx.png)
 
-**Admin Control Panel**
-![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/control_panel_story.aspx.png)
+**Admin Control Panel:**
+![Admin Control Panel](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/control_panel_story.aspx.png)
 
 ## Features
 * Admin Control Panel
