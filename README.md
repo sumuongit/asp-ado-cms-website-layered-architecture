@@ -12,16 +12,16 @@ A sample website for content management (Content Management System) using ASP.NE
 
 Some snapshots of the CMS website are given below:
 
-**Home:**
+**Home:**<br/>
 ![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/home.png)
 
-**Photo Gallery:**
+**Photo Gallery:**<br/>
 ![Photo Gallery](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/gallery.png)
 
-**Contact Us:**
+**Contact Us:**<br/>
 ![Contact Us Form](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/contact.png)
 
-**Admin Control Panel:**
+**Admin Control Panel:**<br/>
 ![Admin Control Panel](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/admin.png)
 
 ## Features
