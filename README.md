@@ -10,6 +10,20 @@
 ## General Info
 A sample website for content management (Content Management System) using ASP.NET, ADO.NET and SQL Server 2012; Layered architecture pattern has been followed in this application
 
+Some snapshots of the CMS website are given below:
+
+**Home**
+![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/home.aspx.png)
+
+**Photo Gallery**
+![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/photo_gallery.aspx.png)
+
+**Contact Us**
+![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/contact.aspx.png)
+
+**Admin Control Panel**
+![Home Page](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/tree/master/CMS_Website/images/control_panel_story.aspx.png)
+
 ## Features
 * Admin Control Panel
 * Photo Gallery (database driven)
