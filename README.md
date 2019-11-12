@@ -25,7 +25,7 @@ Some snapshots of the CMS website are given below:
 ![Admin Control Panel](https://github.com/sumuongit/asp-ado-cms-website-layered-architecture/blob/master/CMS_Website/images/admin_panel.png)
 
 ## Features
-* Home Page Banner Slider (database driven)
+* Home Page - Banner Slider, News and EVents (database driven)
 * Photo Gallery (database driven)
 * Contact Us Form (Sending Mail)  
 * Admin Control Panel
